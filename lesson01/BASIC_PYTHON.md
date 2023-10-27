@@ -55,3 +55,15 @@ if not y:
 
 ```
 
+### Converting Types
+
+```python
+
+a = "5"
+print(type(a)) # <class 'str'>
+
+b = int(a)
+
+print(type(b)) # <class 'int'>
+
+```
