@@ -32,10 +32,6 @@ sudo apt update
 sudo apt install python3.11 -y
 ```
 
-#### Arch Linux or Manjaro
-```shell
-pacman -S python
-```
 
 ## Helpful Resources
 
