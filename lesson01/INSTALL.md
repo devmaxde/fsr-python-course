@@ -21,7 +21,8 @@ Use the [installer](https://www.python.org/downloads/windows/) from the Official
 > [!IMPORTANT]
 > 
 > Make sure to check "Add Python 3.11 to PATH"!
-> ![Windows Installer](installer_windows.png)
+
+![Windows Installer](installer_windows.png)
 
 ### Linux
 
