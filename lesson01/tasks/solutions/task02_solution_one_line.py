@@ -1,0 +1,1 @@
+(lambda x: print("This is a Triangle") if x else print("This is not a Triangle"))(( lambda a, b, c:  (a + b >= c) and (a + c >= b) and (b + c >= a))(int(input("Input the length of side a: ")),int(input("Input the length of side b: ")),int(input("Input the length of side c: "))))
