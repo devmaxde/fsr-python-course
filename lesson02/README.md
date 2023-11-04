@@ -62,7 +62,7 @@ You can see it in action in the Following example. This Script should count to 1
 
 ```python3
 a = 10
-while a <= -1:
+while a >= -1:
     a -= 1
     if a > 3:
         continue # jump to next iteration
