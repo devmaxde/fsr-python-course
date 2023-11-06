@@ -7,7 +7,6 @@
 Use the [installer](https://www.python.org/downloads/windows/) from the official website.
 
 > [!IMPORTANT]
->
 > Make sure to check **Add Python 3.12 to PATH**!
 
 ![Windows Installer for Python 3.10](assets/01_install_windows.png)
