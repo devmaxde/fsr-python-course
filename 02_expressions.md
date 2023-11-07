@@ -125,17 +125,142 @@ In this case the expression will always evaluate to a float.
 
 ### String (`str`)
 
-TODO
+A String is a sequence of letters and any other character defined in the [Unicode Standard](https://unicode.org/charts/).
+This also includes spaces, numbers and even emojis.
+Think of a string as a piece of text.
+
+In general a string literal is surrounded in quotes so Python knows where the string begins and ends:
+
+|                     | Example                                                                       |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Single Quotes       | `'aababab'`, `'Alice'`, `'Hello World!'`, `'allows embedded "double" quotes'` |
+| Double Quotes       | `"aababab"`, `"Alice"`, `"Hello World!"`, `"allows embedded 'single' quotes"` |
+| Three Single Quotes | `'''aababab'''`, `'''Alice'''`, `'''Hello World!'''`                          |
+| Three Double Quotes | `"""aababab"""`, `"""Alice"""`, `"""Hello World!"""`                          |
+
+You can even have a string with no characters in it, called a _blank string_ or an _empty string_:
+`''`, `""`, `''''''`, `""""""`.
+
+Since strings are not numeric like integers and floats, you cannot use arithmetic operations.
+Here, we use **_sequence operations_** to combine strings instead[^3].
+
+| Operator           | Operation                                                                              | Example                    | Result         |
+| ------------------ | -------------------------------------------------------------------------------------- | -------------------------- | -------------- |
+| `s + t`            | The concatenation of `s` and `t`                                                       | `'hello' + 'world'`        | `'helloworld'` |
+| `s * n` or `n * s` | Equivalent to adding `s` to itself `n` times                                           | `'abc' * 3`                | `'abcabcabc'`  |
+| `s[i]`             | _i_-th item of `s`, starting at 0                                                      | `'hello'[1]`               | `'e'`          |
+| `s[i:j]`           | Slice of `s` from `i` to `j`                                                           | `'hello'[1:3]`             | `'el'`         |
+| `s[i:j:k]`         | Slice of `s` from `i` to `j` with step `k`                                             | `'abcdefghij'[1:6:2]`      | `'bdf'`        |
+| `len(s)`           | Length of `s`                                                                          | `len('hello')`             | `5`            |
+| `s.index(x)`       | Index of the first occurrence of `x` in `s`                                            | `'hello'.index('l')`       | `3`            |
+| `s.index(x, i)`    | Index of the first occurrence of `x` in `s` at or after index `i`                      | `'hello'.index('l', 3)`    | `3`            |
+| `s.index(x, i, j)` | Index of the first occurrence of `x` in `s` at or after index `i` and before index `j` | `'hello'.index('l', 3, 5)` | `3`            |
+| `s.count(x)`       | Total number of occurrences of `x` in `s`                                              | `'hello'.count('l')`       | `2`            |
+
+In the table above, `s`, `t` are strings and `i`, `j`, `k`, `n` are integers.
+
+> [!NOTE]
+>
+> Remember that `s` and `t` don't have be literals.
+> They can be any expression that evaluates to the string data type.
+> The same applies to the integers `i`, `j`, `k`, `n` respectively.
+>
+> ```bash
+> >>> ('knock' * (12 // 4)) + 'penny'
+> 'knockknockknockpenny'
+> ```
+
+For better understanding of the slice and index operations it's worth mentioning that every character in a string, _including spaces_, is assigned to an integer.
+The first character in the string is assigned to the number `0`, the second to `1` and so on.
+These numbers are called **_index_** (pl. **_indices_**).
+For the string literal `'Hello World!'` the indices are as follows.
+
+| Character | H   | e   | l   | l   | o   |     | W   | o   | r   | l   | d   | !   |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Index     | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  |
 
 ## Variables
 
-TODO
+So far we have only created literals and combined them using arithmetic and sequence operations.
+We need some way of storing any information and manipulate them as well.
+This is where **_variables_** come into the picture.
+Variables are exactly what the name implies: Their value can vary, i.e., you can store anything using a variable.
+Variables are just parts of your computer's memory where you store some information.
 
-## Bonus
+### The Assignment Statement
 
-Try dividing by zero and see what happens.
+Unlike an expression, which _always_ evaluates to a single value, a **_statement_** describes an instruction that only _does something_ but not _is something_.
 
-## Recap
+The first statement you will use frequently is the _**assignment statement**_ and consists of a variable name (called an **_identifier_** ), the **_assignment operator_** `=` , and an _expression_ whose result to store.
+
+For example we create a variable named `x` and store the value `5` in it:
+
+```bash
+>>> x = 8
+```
+
+Here, `x` is the _identifier_, and `5` is a _literal expression_.
+
+Likewise, we create another variabled with the identifier `y`, where we store the result of the arithmetic expression `2 + 2`.
+
+```bash
+>>> y = 2 + 2
+```
+
+If we assign something to a variable that already exists, the value that's currently being stored gets overwritten by the new one.
+
+For example after executing the following two assignment statements, `x` contains the value `5`:
+
+```bash
+>>> x = 8
+>>> x = 5
+```
+
+Identifiers are not limited to single characters.
+You can choose any identifier as long as you adhere to the following rules:
+
+1. The first character of the identifier must be a letter of the alphabet or an underscore (`_`).
+2. The rest of the identifier name can consist of letters, underscores (`_`) or digits (`0` &ndash; `9`).
+
+> [!NOTE]
+>
+> Identifier names are case-sensitive. For example, `myname` and `myName` are not the same.
+
+For example `x`, `Name`, `name_2_3` are all valid identifiers.
+Invalid identifiers are e.g. `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+
+### The Variable Expression
+
+To get the result of a variable we introduce a new type of expression: **_Identifier Expressions_**.
+Once a variable is created and given an identifier, that very same identifier becomes a valid expression and evaluates to the value stored in the variable.
+
+We can use these in the interactive shell to read the values stored in the variables `x` and `y` we created earlier.
+
+```bash
+>>> x
+5
+>>> y
+4
+>>> x + y
+9
+```
+
+<!-- TODO: Organize Quiz separately -->
+
+> [!NOTE]
+>
+> **Pop Quiz: ** What gets displayed after executing the following?
+>
+> ```bash
+> >>> a = 8
+> >>> b = 2 * 3
+> >>> b = b * 2
+> >>> a + b
+> ?
+> ```
+
+<!-- TODO: Recap -->
 
 [^1]: [The Python Standard Library: Numeric Types — int, float, complex](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
 [^2]: [The Python Language Reference: Floating point literals](https://docs.python.org/3/reference/lexical_analysis.html#floating-point-literals)
+[^3]: [The Python Standard Library: Common Sequence Operations](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations)
