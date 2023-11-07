@@ -14,7 +14,7 @@
 | ------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `2023/10/27`        | [Getting Started](01_getting_started.md) | Setting up Python 3 and a Development Environment                                                           |
 | `2023/11/03`        | &mdash;                                  | &mdash;                                                                                                     |
-| `2023/11/10`        | [Expressions](02_expressions.md)         | The Interactive Shell, Operators, Simple Datatypes _(Integers, Floating-point numbers, Strings)_, Variables |
+| `2023/11/10`        | [Expressions](02_expressions.md)         | The Interactive Shell, Operators, Simple Datatypes _(Integers, Floating-point Numbers, Strings)_, Variables |
 | `2023/11/17`        | _TBD_                                    |
 
 ## References
