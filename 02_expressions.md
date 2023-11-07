@@ -159,7 +159,7 @@ Here, we use **_sequence operations_** to combine strings instead[^3].
 In the table above, `s`, `t` are strings and `i`, `j`, `k`, `n` are integers.
 
 > [!NOTE]
-> Remember that `s` and `t` don't have be literals.
+> Remember that `s` and `t` don't have to be literals.
 > They can be any expression that evaluates to the string data type.
 > The same applies to the integers `i`, `j`, `k`, `n` respectively.
 > ```bash
