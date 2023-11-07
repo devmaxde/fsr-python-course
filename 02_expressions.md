@@ -103,7 +103,6 @@ Arithmetic expressions work the same way for floats as they do for integers.
 
 > [!NOTE]
 > Division (`/`) **always** evaluates to a float, even if both operands are integers.
->
 > ```bash
 > >>> 10 / 2
 > 5.0
@@ -160,11 +159,9 @@ Here, we use **_sequence operations_** to combine strings instead[^3].
 In the table above, `s`, `t` are strings and `i`, `j`, `k`, `n` are integers.
 
 > [!NOTE]
->
 > Remember that `s` and `t` don't have be literals.
 > They can be any expression that evaluates to the string data type.
 > The same applies to the integers `i`, `j`, `k`, `n` respectively.
->
 > ```bash
 > >>> ('knock' * (12 // 4)) + 'penny'
 > 'knockknockknockpenny'
@@ -223,7 +220,6 @@ You can choose any identifier as long as you adhere to the following rules:
 2. The rest of the identifier name can consist of letters, underscores (`_`) or digits (`0` &ndash; `9`).
 
 > [!NOTE]
->
 > Identifier names are case-sensitive. For example, `myname` and `myName` are not the same.
 
 For example `x`, `Name`, `name_2_3` are all valid identifiers.
@@ -248,9 +244,7 @@ We can use these in the interactive shell to read the values stored in the varia
 <!-- TODO: Organize Quiz separately -->
 
 > [!NOTE]
->
-> **Pop Quiz: ** What gets displayed after executing the following?
->
+> **Pop Quiz:** What gets displayed after executing the following?
 > ```bash
 > >>> a = 8
 > >>> b = 2 * 3
