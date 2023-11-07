@@ -67,7 +67,7 @@ For complex expressions Python will keep evaluating parts of the expression unti
 16.0
 ```
 
-![Stepwise evaluation of a complex arithmetic expression in Python](assets/02_arithmetic_expressions.jpeg)
+![Stepwise evaluation of a complex arithmetic expression in Python](assets/02_arithmetic_expressions.svg)
 
 ## Data Types
 
