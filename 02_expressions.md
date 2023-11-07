@@ -30,6 +30,7 @@ A literal only consists of a single value and always evaluates to itself.
 
 The expression `2 + 2` we evaluated earlier is an **_arithmetic expression_**.
 An arithmetic expression consists of an **_operator_** and either one _("unary")_ or two _("binary")_ **_operands_**.
+The table below shows the most commonly used arithmetic operators with `x` and `y` representing the operands.
 
 | Operator | Operation                   | Example   | Result |
 | -------- | --------------------------- | --------- | ------ |
@@ -42,6 +43,35 @@ An arithmetic expression consists of an **_operator_** and either one _("unary")
 | `-x`     | x negated                   | `-5`      | `-5`   |
 | `+x`     | x unchanged                 | `+5`      | `5`    |
 | `x ** y` | x to the power of y         | `2 ** 3`  | `8`    |
+
+Operands can not only be literal values, but any expression that evaluates to a number.
+That means we can combine arithmetic expressions however we like.
+The _order of operations_ (also called _precedence_) of math operators applies.
+
+```bash
+>>> 2 + 3 * 6
+20
+```
+
+You may use parantheses to override the usual precedence.
+
+```bash
+>>> (2 + 3) * 6
+30
+```
+
+For complex expressions Python will keep evaluating parts of the expression until it becomes a single value.
+
+```bash
+>>> (5 - 1) * ((7 + 1) / (3 - 1))
+16.0
+```
+
+![Stepwise evaluation of a complex arithmetic expression in Python](assets/02_arithmetic_expressions.jpeg)
+
+## Data Types
+
+TODO
 
 ## Variables
 
