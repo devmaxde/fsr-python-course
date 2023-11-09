@@ -32,17 +32,17 @@ The expression `2 + 2` we evaluated earlier is an **_arithmetic expression_**.
 An arithmetic expression consists of an **_operator_** and either one _("unary")_ or two _("binary")_ **_operands_**.
 The table below shows the most commonly used arithmetic operators with `x` and `y` representing the operands[^1].
 
-| Operator | Operation                   | Example   | Result |
-| -------- | --------------------------- | --------- | ------ |
-| `x + y`  | sum of x and y              | `3 + 4`   | `7`    |
-| `x - y`  | difference of x and y       | `5 - 2`   | `3`    |
-| `x * y`  | product of x and y          | `2 * 5`   | `10`   |
-| `x / y`  | quotient of x and y         | `10 / 4`  | `2.5`  |
-| `x // y` | floored quotient of x and y | `10 // 4` | `2`    |
-| `x % y`  | remainder of x / y          | `10 % 3`  | `1`    |
-| `-x`     | x negated                   | `-5`      | `-5`   |
-| `+x`     | x unchanged                 | `+5`      | `5`    |
-| `x ** y` | x to the power of y         | `2 ** 3`  | `8`    |
+| Expression | Operation                   | Example   | Result |
+| ---------- | --------------------------- | --------- | ------ |
+| `x + y`    | sum of x and y              | `3 + 4`   | `7`    |
+| `x - y`    | difference of x and y       | `5 - 2`   | `3`    |
+| `x * y`    | product of x and y          | `2 * 5`   | `10`   |
+| `x / y`    | quotient of x and y         | `10 / 4`  | `2.5`  |
+| `x // y`   | floored quotient of x and y | `10 // 4` | `2`    |
+| `x % y`    | remainder of x / y          | `10 % 3`  | `1`    |
+| `-x`       | x negated                   | `-5`      | `-5`   |
+| `+x`       | x unchanged                 | `+5`      | `5`    |
+| `x ** y`   | x to the power of y         | `2 ** 3`  | `8`    |
 
 Operands can not only be literal values, but any expression that evaluates to a number.
 That means we can combine arithmetic expressions however we like.
@@ -103,6 +103,7 @@ Arithmetic expressions work the same way for floats as they do for integers.
 
 > [!NOTE]
 > Division (`/`) **always** evaluates to a float, even if both operands are integers.
+>
 > ```bash
 > >>> 10 / 2
 > 5.0
@@ -143,7 +144,7 @@ You can even have a string with no characters in it, called a _blank string_ or 
 Since strings are not numeric like integers and floats, you cannot use arithmetic operations.
 Here, we use **_sequence operations_** to combine strings instead[^3].
 
-| Operator           | Operation                                                                              | Example                    | Result         |
+| Expression         | Operation                                                                              | Example                    | Result         |
 | ------------------ | -------------------------------------------------------------------------------------- | -------------------------- | -------------- |
 | `s + t`            | The concatenation of `s` and `t`                                                       | `'hello' + 'world'`        | `'helloworld'` |
 | `s * n` or `n * s` | Equivalent to adding `s` to itself `n` times                                           | `'abc' * 3`                | `'abcabcabc'`  |
@@ -162,6 +163,7 @@ In the table above, `s`, `t` are strings and `i`, `j`, `k`, `n` are integers.
 > Remember that `s` and `t` don't have to be literals.
 > They can be any expression that evaluates to the string data type.
 > The same applies to the integers `i`, `j`, `k`, `n` respectively.
+>
 > ```bash
 > >>> ('knock' * (12 // 4)) + 'penny'
 > 'knockknockknockpenny'
@@ -172,9 +174,9 @@ The first character in the string is assigned to the number `0`, the second to `
 These numbers are called **_index_** (pl. **_indices_**).
 For the string literal `'Hello World!'` the indices are as follows.
 
-| Character | H   | e   | l   | l   | o   |     | W   | o   | r   | l   | d   | !   |
-| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Index     | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  |
+| Character | `H` | `e` | `l` | `l` | `o` |     | `W` | `o` | `r` | `l` | `d`  | `!`  |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---- | ---- |
+| Index     | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` |
 
 ## Variables
 
@@ -243,8 +245,8 @@ We can use these in the interactive shell to read the values stored in the varia
 
 <!-- TODO: Organize Quiz separately -->
 
-> [!NOTE]
-> **Pop Quiz:** What gets displayed after executing the following?
+> [!NOTE] > **Pop Quiz:** What gets displayed after executing the following?
+>
 > ```bash
 > >>> a = 8
 > >>> b = 2 * 3
