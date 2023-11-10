@@ -229,7 +229,7 @@ Invalid identifiers are e.g. `2things`, `this is spaced out`, `my-name` and `>a1
 
 ### The Variable Expression
 
-To get the result of a variable we introduce a new type of expression: **_Identifier Expressions_**.
+To get the result of a variable we introduce a new type of expression: **_Variable Expressions_**.
 Once a variable is created and given an identifier, that very same identifier becomes a valid expression and evaluates to the value stored in the variable.
 
 We can use these in the interactive shell to read the values stored in the variables `x` and `y` we created earlier.
