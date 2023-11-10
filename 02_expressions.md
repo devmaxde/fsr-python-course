@@ -245,7 +245,8 @@ We can use these in the interactive shell to read the values stored in the varia
 
 <!-- TODO: Organize Quiz separately -->
 
-> [!NOTE] > **Pop Quiz:** What gets displayed after executing the following?
+> [!NOTE]
+> **Pop Quiz:** What gets displayed after executing the following?
 >
 > ```bash
 > >>> a = 8
