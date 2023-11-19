@@ -128,7 +128,7 @@ With the basics covered, we are ready to leave the interactive shell and start w
 A Python-Script is a file with a `.py` suffix, e.g. `my_first_script.py`.
 Avoid using spaces in your filename.
 Use underscores (`_`) instead.
-a series of instructions (i.e. statements and expressions) to execute.
+A Python-Script contains a series of instructions (i.e. statements and expressions) to execute.
 
 You can open the file in any text editor you desire.
 It's recommended to use either [PyCharm](https://www.jetbrains.com/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/), which we installed in the first course.
