@@ -1,6 +1,6 @@
 # Expressions
 
-> [!NOTE]
+> [!TIP]
 > Launch the **Interactive Shell** by running the `python3.12` command in your terminal.
 
 Enter `2 + 2` into the prompt to have Python do some simple math.
@@ -88,7 +88,7 @@ This is useful for very large numbers, like `1_000_000`, which is equivalent to 
 Numbers with a decimal point are called floating-point numbers (or floats).
 Some literal expressions representing floats are `-1.25`, `0.5`, `0.0`, `0.000`, `1.0`, `+4.8`, `9999.99`.
 
-> [!NOTE]
+> [!TIP]
 > Even though the value `42` is an integer, the value `42.0` is a floating-point number.
 
 Float literals also support scientific notation, using either a lowercase `e` or capital `E`
@@ -101,7 +101,7 @@ Arithmetic expressions work the same way for floats as they do for integers.
 4.0
 ```
 
-> [!NOTE]
+> [!TIP]
 > Division (`/`) **always** evaluates to a float, even if both operands are integers.
 >
 > ```bash
@@ -159,7 +159,7 @@ Here, we use **_sequence operations_** to combine strings instead[^3].
 
 In the table above, `s`, `t` are strings and `i`, `j`, `k`, `n` are integers.
 
-> [!NOTE]
+> [!TIP]
 > Remember that `s` and `t` don't have to be literals.
 > They can be any expression that evaluates to the string data type.
 > The same applies to the integers `i`, `j`, `k`, `n` respectively.
@@ -221,7 +221,7 @@ You can choose any identifier as long as you adhere to the following rules:
 1. The first character of the identifier must be a letter of the alphabet or an underscore (`_`).
 2. The rest of the identifier name can consist of letters, underscores (`_`) or digits (`0` &ndash; `9`).
 
-> [!NOTE]
+> [!TIP]
 > Identifier names are case-sensitive. For example, `myname` and `myName` are not the same.
 
 For example `x`, `Name`, `name_2_3` are all valid identifiers.
@@ -255,8 +255,6 @@ We can use these in the interactive shell to read the values stored in the varia
 > >>> a + b
 > ?
 > ```
-
-<!-- TODO: Recap -->
 
 [^1]: [The Python Standard Library: Numeric Types — int, float, complex](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
 [^2]: [The Python Language Reference: Floating point literals](https://docs.python.org/3/reference/lexical_analysis.html#floating-point-literals)
