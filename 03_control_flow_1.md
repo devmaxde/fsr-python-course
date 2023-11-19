@@ -198,7 +198,7 @@ if name == "Alice":
     print("You are Alice")
 ```
 
-![assets/03_if.svg]()
+<img src="/assets/03_if.svg" width="520" />
 
 ### `else` clause
 
@@ -214,7 +214,7 @@ else:
     print("You aren't Alice")
 ```
 
-![assets/03_if_else.svg]()
+<img src="/assets/03_if_else.svg" width="588" />
 
 ### `elif` clause
 
@@ -230,7 +230,7 @@ else:
     print("You are neither Alice nor drinking age")
 ```
 
-![assets/03_if_elif_else.svg]()
+<img src="/assets/03_if_elif_else.svg" width="780" />
 
 This creates a distinction between 3 cases, only **one** of which is ever executed.
 
@@ -254,7 +254,7 @@ else:
     print("You are neither Alice nor drinking age")
 ```
 
-![assets/03_if_if_else.svg]()
+<img src="/assets/03_if_if_else.svg" width="720" />
 
 This code does indeed behave differently to the one before.
 If you set the name to `Alice` and age to something above or equal to `21`, e.g. `23`, you will get two outputs:
