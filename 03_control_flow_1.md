@@ -218,6 +218,8 @@ else:
 
 ### `elif` clause
 
+`elif` is a shorthand for having an `else`, immediatly followed by an `if`.
+
 ```python
 name = input()
 age = int(input())
