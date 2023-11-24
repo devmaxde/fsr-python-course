@@ -105,11 +105,6 @@ We can use the same sequence operations we learned earlier with strings:
 
 ## The `range()` expression
 
-```console
->>> range(0, 10)
-0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-```
-
 ```python
 for i in range(0, 5):
     print("Hello World")
