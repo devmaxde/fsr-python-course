@@ -7,7 +7,8 @@
 1. [Getting Started](01_getting_started.md)
 2. [Expressions](02_expressions.md)
 3. [Control Flow 1](03_control_flow_1.md)
-4. _Control Flow 2_
+4. [Control Flow 2](03_control_flow_2.md)
+5. _TBD_
 
 ## Schedule
 
@@ -16,8 +17,9 @@
 | `2023/10/27`        | [Getting Started](01_getting_started.md) | Setting up Python 3 and a Development Environment                                                           |
 | `2023/11/03`        | &mdash;                                  | &mdash;                                                                                                     |
 | `2023/11/10`        | [Expressions](02_expressions.md)         | The Interactive Shell, Operators, Simple data types _(Integers, Floating-point Numbers, Strings)_, Variables |
-| `2023/11/17`        | [Control Flow 1](03_control_flow_1.md)       | Boolean data type, Comparison and Logical Expressions, `input()`, `print()`, Programming a Python-Script, `if` statements, `else` and `elif` clauses |
-| `2023/11/24`        | _Control Flow 2_       | _TBD_ |
+| `2023/11/17`        | [Control Flow 1](03_control_flow_1.md)   | Boolean data type, Comparison and Logical Expressions, `input()`, `print()`, Programming a Python-Script, `if` statements, `else` and `elif` clauses |
+| `2023/11/24`        | [Control Flow 2](03_control_flow_2.md)   | Loops (`while`, `for`), Lists, Tuples, `range()`, `continue`, `break` |
+| `2023/12/01`        | _TBD_       | _TBD_ |
 
 ## References
 

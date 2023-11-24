@@ -12,7 +12,7 @@
 >    ```
 >    _↳ `10.0` (of `float` data type)_
 
-# Control Flow
+# Control Flow 1
 
 ## The "Boolean" data type (`bool`)
 
