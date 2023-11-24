@@ -124,7 +124,7 @@ The continue Statement can be used to skipp the current iteration and start from
 
 For example:
 
-print the nubers 1-10 except the 7
+print the numbers 1-10 except the 7
 ```python
 for i in range(1,10):
     if i == 7:
