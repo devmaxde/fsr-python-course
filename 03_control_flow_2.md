@@ -69,18 +69,12 @@ l
 o
 ```
 
-_Editor's Note: What's the output of the following script?_
-```python
-for c in "Hello":
-    print("Hello")
-```
-
 ## The "List" and "Tuple" Sequence Data Types
 
 So far we established `string` data type, which consists of a sequence of Unicode symbols.
 Going a step further, we can generalize the concept of sequences and obtain two new data types: _**Lists**_ and _**Tuples**_.
 
-### List
+### Lists
 
 Similar to a `string`, a list is a sequence of values, however instead of being limited to single unicode symbols, the elements can be of any size and data type.
 Lists may contain items of different data types, but usually the items all have the same type.
@@ -89,29 +83,146 @@ The literal expression of the List data type consists of comma-separated values,
 
 For example, let `a`, `b` and `c` be expressions of any data type.
 A List containing `a`, `b` and `c` in this order looks like this:
-```
+```python
 [a, b, c]
 ```
 
+Just like other expressions, we can use variables to store a List, e.g. a shopping list:
+
+```python
+groceries = ["Apples", "Oranges", "Cheddar Cheese", "Milk", "Bread"]
+```
+
+Just like letters/symbols in a String, each item in our List is assigned to an Index:
+
+| Element | `"Apples"` | `"Oranges"` | `"Cheddar Cheese"` | `"Milk"` | `"Bread"` |
+| ------: | :---: | :---: | :---: | :---: | :---: |
+| Index   | `0` | `1` | `2` | `3` | `4` |
+
 We can use the same sequence operations we learned earlier with strings:
+
 ```console
->>> ["one", "two", "three"] + ["four", "five"]
-["one", "two", "three", "four", "five"]
+>>> ["zero", "one", "two"] + ["three", "four"]
+["zero", "one", "two", "three", "four"]
 ```
 
 
-### Tuple
+### Tuples
 
+A Tuple ist almost identical to a List, however it is _**immutable**_.
+So unlike a List, you cannot add or remove elements to or from a tuple after the fact.
+
+Creating a tuple is done the same way, but instead of using square (`[`, `]`), we use parantheses (`(`, `)`):
+
+```python
+>>> foo = ("the meaning of life", 42)
+>>> foo[0]
+'the meaning of life'
+>>> foo[1]
+42
+```
 
 ## The `range()` expression
+
+Very commonly, you need to execute a block of code a specific number of times.
+For example we want to output all numbers from `0` to `10`.
+With our current knowledge, we have two ways to accomplish:
+
+1. Using a `while` loop with a counter variable:
+   ```python
+   i = 0
+   while i <= 10:
+       print(i)
+       i = i + 1
+   ```
+
+2. Using a `for` loop with a List Literal Expression:
+   ```python
+   for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+       print(i)
+       i = i + 1
+   ```
+
+But there is a better way in Python to do this: The `range()` expression.
+In fact, there are three different ways to use `range()`:
+
+| Syntax                                              | Description                                      | Example                                    | Result                          |
+|-----------------------------------------------------|--------------------------------------------------|--------------------------------------------|---------------------------------|
+| `range(stop)`                                       | Generates numbers from 0 up to, but not including, `stop` | `range(5)`                                 | `[0, 1, 2, 3, 4]`                |
+| `range(start, stop)`                                 | Generates numbers from `start` up to, but not including, `stop` | `range(2, 7)`                              | `[2, 3, 4, 5, 6]`                |
+| `range(start, stop, step)`                           | Generates numbers from `start` up to, but not including, `stop` with a step of `step` | `range(1, 10, 2)`                         | `[1, 3, 5, 7, 9]`                |
+
+Using it in conjunction with the `for` loop, we can achieve the same goal with the following:
+
+```python
+for i in range(0, 11):
+    print(i)
+```
+**Output**
+```console
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+Instead of just counting up numbers, we can also simply repeat a task `x` times:
 
 ```python
 for i in range(0, 5):
     print("Hello World")
+```
+**Output**
+```console
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
 ```
 
 ## Loop control
 
 ### `continue`
 
+The continue Statement can be used to skipp the current iteration and start from the beginning. Depending on the Iteration type 2 things can happen:
+
+- for Loop:
+
+   the next element will be selected
+- while Loop:
+
+   the condition will be checked again
+
+
+For example:
+
+print the numbers 1-10 except the 7
+```python
+for i in range(1,10):
+    if i == 7:
+        continue
+    print(i)
+```
+
 ### `break`
+
+you can use the break Statement to exit a loop early.
+
+Here we want to print the numbers 1-10 using the while True loop.
+
+```python
+for i in range(1,100):
+    if i == 10:
+        break
+    print(i)
+
+```
+
