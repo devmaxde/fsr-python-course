@@ -8,7 +8,7 @@
 2. [Expressions](02_expressions.md)
 3. [Control Flow 1](03_control_flow_1.md)
 4. [Control Flow 2](03_control_flow_2.md)
-5. _TBD_
+5. [Functions](04_functions.md)
 
 ## Schedule
 
@@ -19,7 +19,7 @@
 | `2023/11/10`        | [Expressions](02_expressions.md)         | The Interactive Shell, Operators, Simple data types _(Integers, Floating-point Numbers, Strings)_, Variables |
 | `2023/11/17`        | [Control Flow 1](03_control_flow_1.md)   | Boolean data type, Comparison and Logical Expressions, `input()`, `print()`, Programming a Python-Script, `if` statements, `else` and `elif` clauses |
 | `2023/11/24`        | [Control Flow 2](03_control_flow_2.md)   | Loops (`while`, `for`), Lists, Tuples, `range()`, `continue`, `break` |
-| `2023/12/01`        | _TBD_       | _TBD_ |
+| `2023/12/01`        | [Functions](04_functions.md)             | Mutable and Immutable Sequence Types, Functions |
 
 ## References
 
