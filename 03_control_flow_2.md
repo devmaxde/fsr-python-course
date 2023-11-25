@@ -188,41 +188,81 @@ Hello World
 Hello World
 ```
 
-## Loop control
+## Loop Control using `continue` and `break`
 
 ### `continue`
 
-The continue Statement can be used to skipp the current iteration and start from the beginning. Depending on the Iteration type 2 things can happen:
+`continue` statements are exclusively used inside loops.
+When the program execution reaches a `continue` statement, the program execution immediately jumps back to the start of the loop and reevaluates the loop’s condition.
+(This is also what happens when the execution reaches the end of the loop.)
 
-- for Loop:
-
-   the next element will be selected
-- while Loop:
-
-   the condition will be checked again
-
-
-For example:
-
-print the numbers 1-10 except the 7
 ```python
 for i in range(1,10):
     if i == 7:
         continue
     print(i)
 ```
+**Output**
+```console
+0
+1
+2
+3
+4
+5
+6
+8
+9
+```
+
+Notice how the output does not contain `7`.
+Since we the `if` condition evaluates to `True` for `i` = `7`, the `continue` statement is executed.
+As such, we jump back to the beginning of the loop and continue with the next number (`8`).
+This results in the `print(i)` statement being skipped.
+
+The same works for `while` loops.
+Using continue inside a `while` loop skips over the rest of the code block and goes back to the `while` loop's condition, checks it, and executes the code block again if the condition evaluated to `True`.
+If the condition evaluates to `False`, we exit the loop and the rest of the program is executed as usual.
+
+The following script creates the same output as shown above in the `for` loop example:
+
+```python
+i = 0
+while i < 10:
+    if i == 7:
+        i = i + 1
+        continue
+    print(i)
+    i = i + 1
+```
 
 ### `break`
 
-you can use the break Statement to exit a loop early.
+Like `continue` statements, `break` statements are used inside loops.
+When the execution reaches a break statement, it immediately stops and exits the loop.
+Unlike `continue`, the execution does not jump back to beginning of the loop, but instead skips over the rest of the code block and leaves the loop entirely.
 
-Here we want to print the numbers 1-10 using the while True loop.
+A classical example is a `while True` loop, which would run indefinitely, since the condition is always `true`.
+However, with the `break` statement we can use an `if` statement inside the `while` loop to exit the loop once we reach the number `7`.
 
 ```python
-for i in range(1,100):
-    if i == 10:
+i = 0
+while True:
+    if i == 7:
         break
     print(i)
-
+    i = i + 1
+```
+**Output**
+```console
+0
+1
+2
+3
+4
+5
+6
 ```
 
+> [!TIP]
+> If you happen to run into an infinite loop, you can kill the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> inside the Terminal.
