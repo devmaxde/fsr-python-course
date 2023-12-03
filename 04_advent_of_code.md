@@ -62,3 +62,8 @@ Let `s`, `t` be sequences, `i`, `j`, `k`, `n` be integers, and `x` be an express
 > >>> test
 > ['apple', 'oranges']
 > ```
+
+## Advent of Code 2023
+
+Let's use what we learned so far in practice by solving the first day of [Advent of Code 2023](https://adventofcode.com/2023/day/1).
+

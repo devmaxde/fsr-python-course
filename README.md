@@ -8,7 +8,7 @@
 2. [Expressions](02_expressions.md)
 3. [Control Flow 1](03_control_flow_1.md)
 4. [Control Flow 2](03_control_flow_2.md)
-5. [Functions](04_functions.md)
+5. [Advent of Code](04_advent_of_code.md)
 
 ## Schedule
 
@@ -19,7 +19,9 @@
 | `2023/11/10`        | [Expressions](02_expressions.md)         | The Interactive Shell, Operators, Simple data types _(Integers, Floating-point Numbers, Strings)_, Variables |
 | `2023/11/17`        | [Control Flow 1](03_control_flow_1.md)   | Boolean data type, Comparison and Logical Expressions, `input()`, `print()`, Programming a Python-Script, `if` statements, `else` and `elif` clauses |
 | `2023/11/24`        | [Control Flow 2](03_control_flow_2.md)   | Loops (`while`, `for`), Lists, Tuples, `range()`, `continue`, `break` |
-| `2023/12/01`        | [Functions](04_functions.md)             | Mutable and Immutable Sequence Types, Functions |
+| `2023/12/01`        | [Advent of Code](04_advent_of_code.md)   | Mutable and Immutable Sequence Types, Advent of Code |
+| `2023/12/08`        | &mdash; | &mdash; |
+| `2023/12/15`        | _TBD_ | _TBD_ |
 
 ## References
 
@@ -27,3 +29,4 @@
 - [A Byte of Python](https://python.swaroopch.com/) by Swaroop CH
 - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html) by the Python Software Foundation
 - [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/) by Kenneth Reitz
+- [Advent of Code](https://adventofcode.com/)
