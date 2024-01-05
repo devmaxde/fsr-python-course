@@ -4,9 +4,11 @@ import time
 size = 30
 field_char = "◾"
 
-field = [
-	['' for _ in range(size)] for _ in range(size)
-]
+
+def generate_field():
+	return [
+		['' for _ in range(size)] for _ in range(size)
+	]
 
 
 def print_game_field(game_field):
@@ -40,6 +42,7 @@ def calculate_next_generation(local_field):
 	return local_field
 
 
+field = generate_field()
 field = randomize_field(field)
 
 while True:
