@@ -1,44 +1,19 @@
 
 # Python Programming Tasks with Hints
 
-## Task 1: Username Checker
-Write a program that asks the user to enter a username. If the username is less than 5 characters long, print "Username is too short". If it's more than 15 characters, print "Username is too long". Otherwise, print "Username is valid".
 
-
-## Task 2: Number Guessing Game
-Develop a simple number guessing game. The program should generate a random number between 1 and 10 and ask the user to guess it. Inform the user if their guess is too high, too low, or correct.
-
-```python3
-def get_random_number(max_num):
-    import random
-    return random.randint(1, max_num)
-```
-
-## Task 3: Multiplication Table Printer
-Create a script that asks the user for a number and prints the multiplication table for that number up to 10 (e.g., if the user enters 3, then print the 3 times table).
-
-
-<details>
-<summary>Hint</summary>
-Inside the loop, multiply the user's number by the current number in the loop's range.
-</details>
-
-
-## Task 5: Count Character Occurrences
-Write a script that asks the user to enter a sentence and then counts and prints the number of vowels in that sentence.
-
-<details>
-<summary>Hint 1</summary>
-Use a dictionary to store the vowels and their counts.
-for example:
-
-```python
-data = {
-    "a": 0,
-    "b": 3
-}
-```
-</details>
-
-## Task 6: Fibonacci Sequence Generator
+## Task 1: Fibonacci Sequence Generator
 Develop a program that asks the user how many Fibonacci numbers to generate and then generates them. The Fibonacci sequence is a series of numbers where the next number is the sum of the two preceding ones, usually starting with 0 and 1.
+
+## Task 2: Tic Tac Toe Game
+Develop a program that allows two players to play a game of tic-tac-toe. Use a 3x3 grid and ask the players for their moves turn by turn.
+
+## Task 3: Game of Life
+Implement the Game of Life. The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. The rules are as follows:
+
+- Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+- Any live cell with two or three live neighbours lives on to the next generation.
+- Any live cell with more than three live neighbours dies, as if by overpopulation.
+- Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+### Use the Help Functions
