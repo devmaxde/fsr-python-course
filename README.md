@@ -21,7 +21,9 @@
 | `2023/11/24`        | [Control Flow 2](03_control_flow_2.md)   | Loops (`while`, `for`), Lists, Tuples, `range()`, `continue`, `break` |
 | `2023/12/01`        | [Advent of Code](04_advent_of_code.md)   | Mutable and Immutable Sequence Types, Advent of Code |
 | `2023/12/08`        | &mdash; | &mdash; |
-| `2023/12/15`        | _TBD_ | _TBD_ |
+| `2023/12/15`        | [Functions](05_functions.md) | Defining Functions, Calling Functions, Parameters, `return` statement, `None` data type and value |
+| `2023/01/05`        | [Practice](06_practice.md) | Problem solving and exercises, Fibonacci, Tic Tac Toe, Game of Life |
+| `2023/01/12`        | [Dictionaries](07_dictionaries.md) | Dictionary data type, Structuring data, more exercises |
 
 ## References
 

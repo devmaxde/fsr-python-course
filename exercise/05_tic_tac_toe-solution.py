@@ -1,6 +1,3 @@
-import time
-
-
 def print_game_field(game_field):
 	print("   1 2 3\n  -------")
 	a = 1
@@ -22,18 +19,14 @@ def count_free_cells(game_field):
 
 
 def select_field(game_field, player):
-	selected = False
-	while not selected:
-		row = int(input("Select row: "))
-		col = int(input("Select column: "))
-		if row < 1 or row > 3 or col < 1 or col > 3:
-			print("Invalid input. Try again.")
-			continue
-		if game_field[row - 1][col - 1] == '':
-			game_field[row - 1][col - 1] = player
-			selected = True
-		else:
-			print("Field already selected. Try again.")
+    row = int(input("Select row: "))
+    col = int(input("Select column: "))
+    if row < 1 or row > 3 or col < 1 or col > 3:
+        print("Invalid input. Try again.")
+    if game_field[row - 1][col - 1] == '':
+        game_field[row - 1][col - 1] = player
+    else:
+        print("Field already selected. Try again.")
 
 
 def check_winner(game_field):
