@@ -1,6 +1,6 @@
 # Python 3 for Beginners
 
-[Python Course](https://kurse.ifsr.de/course/301/) taught by [Emanuel Pilz](https://github.com/Emonadeo) and [Max Kutschka](https://github.com/mibkvr) at the Faculty of Computer Science @ [Technical University of Dresden](https://tu-dresden.de/).
+[Python Course](https://kurse.ifsr.de/course/301/) taught by [Emanuel Pilz](https://github.com/Emonadeo) and [Max Kutschka](https://github.com/devmaxde) at the Faculty of Computer Science @ [Technical University of Dresden](https://tu-dresden.de/).
 
 ## Table of Contents
 
