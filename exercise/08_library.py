@@ -3,11 +3,11 @@ from book import Book
 
 
 class Library:
-	books: List[Book]
+	__books: List[Book]
 
 	def __init__(self, name):
 		self.name = name
-		self.books = []
+		self.__books = []
 
 
 while True:
